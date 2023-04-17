@@ -1,9 +1,22 @@
 .img {
   display: block;
   margin: 0 auto;
+  border-radius: 50%;
 }
 
 .bio {
   margin: 20px auto;
   width: 300px;
+}
+/* Center all elements on the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the first line of the paragraph text */
+p::first-line {
+  font-weight: bold;
+  font-size: 1.2em;
 }

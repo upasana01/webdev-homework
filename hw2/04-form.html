@@ -8,9 +8,116 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-      <h1>Exercise 04 - Form</h1>
-      <!-- Add your code here -->
+    <main class="formContainer">
+      <div>
+        <h1>Exercise 04 - Form</h1>
+        <!-- Add your code here -->
+        <form>
+          <fieldset>
+            <h2>Sign Up Form</h2>
+            <p>Fill up the items in the form below.</p>
+            <div class="formDiv formDivInput">
+              <label for="name"><b>Name:</b></label>
+              <input
+                class="inputfield"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="formDiv formDivInput">
+              <label for="username"><b>Username:</b></label>
+              <input
+                class="inputfield"
+                type="text"
+                id="username"
+                name="username"
+                required
+              />
+            </div>
+            <div class="formDiv formDivInput">
+              <label for="email"><b>Email:</b></label>
+              <input
+                class="inputfield"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="formDiv formDivInput">
+              <label for="password"><b>Password:</b></label>
+              <input
+                class="inputfield"
+                type="password"
+                id="password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="formDiv formDivInput">
+              <label for="birthdate"><b>Date of Birth:</b></label>
+              <input
+                class="inputfield"
+                type="date"
+                id="birthdate"
+                name="birthdate"
+                required
+              />
+            </div>
+            <div>
+              <label><b>Preferred Pronouns:</b></label>
+              <div class="formDiv">
+                <input
+                  type="radio"
+                  id="she"
+                  name="pronouns"
+                  value="she"
+                  required
+                />
+                <label for="she">She/Her</label>
+              </div>
+              <div class="formDiv">
+                <input
+                  type="radio"
+                  id="he"
+                  name="pronouns"
+                  value="he"
+                  required
+                />
+                <label for="he">He/Him</label>
+              </div>
+              <div class="formDiv">
+                <input
+                  type="radio"
+                  id="they"
+                  name="pronouns"
+                  value="they"
+                  required
+                />
+                <label for="they">They/Them</label>
+              </div>
+              <div class="formDiv">
+                <input
+                  type="radio"
+                  id="nopronouns"
+                  name="pronouns"
+                  value="nopronouns"
+                  required
+                />
+                <label for="nopronouns">I prefer not to say</label>
+              </div>
+            </div>
+            <div>
+              <button class="buttonStyle submitStyle" type="submit">
+                Submit
+              </button>
+              <button class="buttonStyle" type="reset">Reset</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
     </main>
   </body>
 </html>

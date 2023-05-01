@@ -6,7 +6,6 @@
   --black: #080808;
   --white: #fefefe;
   --gray: #565656;
-
   --teal: #006060;
   --violetred: #a2106d;
   --orange: #ffa500;
@@ -54,6 +53,7 @@ li a {
 li a:hover {
   background: var(--violetred);
 }
+
 /* Code for exercise 02-cards */
 
 .card {
@@ -92,7 +92,6 @@ li a:hover {
   background-color: var(--black);
   color: var(--white);
   border: none;
-  padding: 0.5rem 1rem;
   width: 100%;
   height: 40px;
 }

@@ -15,6 +15,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
   color: var(--black);
+  margin: 0;
 }
 
 h1 {
@@ -32,14 +33,14 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--black);
   display: flex;
   justify-content: flex-end;
 }
 
 li {
   float: left;
-  margin-right: 20px;
+  /*margin-right: 20px;*/
 }
 
 li a {
@@ -116,6 +117,7 @@ table,
 th,
 td {
   border: 1px solid var(--black);
+  padding: 10px;
 }
 
 .tdCenter {
@@ -126,6 +128,7 @@ td {
 }
 
 th {
+  width: 200px;
   padding: 10px;
 }
 
@@ -139,14 +142,31 @@ table tbody tr:hover {
   color: var(--black);
 }
 
+.contactForm {
+  border: 1px solid var(--black);
+  padding: 15px;
+}
+
+.contactFormContainer {
+  width: 100%;
+}
+
 .containerForTable {
   display: flex;
   justify-content: center;
 }
 
-label {
+.pronounceDiv {
+  margin-top: 15px;
+}
+
+.pronounceDiv {
+  border: none;
+}
+
+.inputLabel {
   display: inline-block;
-  width: 150px;
+  width: 125px;
   text-align: left;
 }
 
@@ -157,7 +177,7 @@ label {
 .inputfield {
   display: inline-block;
   margin-left: 10px;
-  width: 50%;
+  width: 60%;
 }
 
 .buttonStyle {

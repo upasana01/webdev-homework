@@ -2,16 +2,131 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>02 - Form</title>
-    <link rel="stylesheet" href="styles.css" />
     <script defer src="02-form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <title>04 - Form</title>
+    <link rel="stylesheet" href="../hw2/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../images/Photograph_of_Upasana.pn"
+    />
   </head>
   <body>
-    <main>
-      <h1>Exercise 02 - Form</h1>
-      <!-- You can reuse the form you created in HW 2 -->
+    <main class="formContainer">
+      <div>
+        <h1>Exercise 04 - Form</h1>
+        <!-- Add yor code here -->
+        <form class="contactForm" id="contactFormId">
+          <div class="contactFormContainer">
+            <h2>Sign Up Form</h2>
+            <p>Fill up the items in the form below.</p>
+            <div class="formDiv formDivInput">
+              <label class="inputLabel" for="fullname"><b>Name:</b></label>
+              <input
+                class="inputfield"
+                type="text"
+                id="fullname"
+                name="name"
+                required
+              />
+            </div>
+            <div class="formDiv formDivInput">
+              <label class="inputLabel" for="username"><b>Username:</b></label>
+              <input
+                class="inputfield"
+                type="text"
+                id="username"
+                name="username"
+                required
+              />
+            </div>
+            <div class="formDiv formDivInput">
+              <label class="inputLabel" for="email"><b>Email:</b></label>
+              <input
+                class="inputfield"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="formDiv formDivInput">
+              <label class="inputLabel" for="password"><b>Password:</b></label>
+              <input
+                class="inputfield"
+                type="password"
+                id="password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="formDiv formDivInput">
+              <label class="inputLabel" for="birthdate"
+                ><b>Date of Birth:</b></label
+              >
+              <input
+                class="inputfield"
+                type="date"
+                id="birthdate"
+                name="birthdate"
+                required
+              />
+            </div>
+            <div class="pronounceDiv">
+              <label><b> Pronouns:</b></label>
+              <div class="formDiv">
+                <input
+                  type="radio"
+                  id="she"
+                  name="pronouns"
+                  value="she"
+                  required
+                />
+                <label for="she">She/Her</label>
+              </div>
+              <div class="formDiv">
+                <input
+                  type="radio"
+                  id="he"
+                  name="pronouns"
+                  value="he"
+                  required
+                />
+                <label for="he">He/Him</label>
+              </div>
+              <div class="formDiv">
+                <input
+                  type="radio"
+                  id="they"
+                  name="pronouns"
+                  value="they"
+                  required
+                />
+                <label for="they">They/Them</label>
+              </div>
+              <div class="formDiv">
+                <input
+                  type="radio"
+                  id="nopronouns"
+                  name="pronouns"
+                  value="nopronouns"
+                  required
+                />
+                <label for="nopronouns">I prefer not to say</label>
+              </div>
+            </div>
+            <div>
+              <button class="buttonStyle submitStyle" type="submit">
+                Submit
+              </button>
+              <button class="buttonStyle" type="reset">Reset</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>
